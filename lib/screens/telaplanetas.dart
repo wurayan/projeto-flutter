@@ -86,14 +86,14 @@ class _PlanetasState extends State<Planetas> {
                     Row(
                       children: const [
                         Flexible(
-                            child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 10),
-                          child: Text(
-                            "Cybertron é o planeta natal dos Transformers e o corpo de seu criador, Primus. Cybertron é um mundo tecnológico e metálico brilhante.",
-                            style: TextStyle(
-                                color: Color.fromARGB(151, 255, 255, 255)),
-                          ),
-                        )),
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 10),
+                            child: Text(
+                              "Cybertron é o planeta natal dos Transformers e o corpo de seu criador, Primus. Cybertron é um mundo tecnológico e metálico brilhante.",
+                              style: TextStyle(
+                                  color: Color.fromARGB(151, 255, 255, 255)),
+                            ),
+                          )),
                       ],
                     ),
                     SizedBox(
