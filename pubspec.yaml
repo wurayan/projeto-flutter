@@ -35,6 +35,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   animated_background: ^2.0.0
+  web_ffi: ^0.7.2
+  flutter_native_splash: ^2.2.9
+  flutter_launcher_icons: ^0.10.0
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +66,16 @@ flutter:
     - assets/
   #   - images/a_dot_ham.jpeg
 
+flutter_native_splash:
+  image: splash.png
+  color: "000000"
+  android_disable_fullscreen: true
+  fill: true
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: icon.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

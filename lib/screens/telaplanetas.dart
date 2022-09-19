@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:horrorland/screens/gallifrey.dart';
 
 class Planetas extends StatefulWidget {
   const Planetas({Key? key}) : super(key: key);
@@ -30,7 +31,7 @@ class _PlanetasState extends State<Planetas> {
             ),
             
             TextButton(
-              onPressed: () {},
+              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const Gallifrey(),));},
               child: Card(
                 clipBehavior: Clip.antiAlias,
                 elevation: 10,
@@ -182,9 +183,21 @@ class _PlanetasState extends State<Planetas> {
               ),
             ),
             const SizedBox(height: 35,),
+            
           ],
         ),
       ),
-    ));
+    ),
+    floatingActionButton: FloatingActionButton(
+      onPressed: () {
+        Navigator.pop(context);
+      },
+      backgroundColor: const Color.fromARGB(0, 219, 55, 110),
+      child: const Icon(Icons.arrow_back_ios_new_rounded,
+        color: Color.fromARGB(160, 255, 255, 255),
+        size: 34,),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
+    );
   }
 }

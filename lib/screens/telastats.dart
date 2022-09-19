@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:horrorland/screens/telaplanetas.dart';
+import 'package:horrorland/util/contador.dart';
+
 
 class TelaStats extends StatefulWidget {
   const TelaStats({Key? key}) : super(key: key);
@@ -11,6 +13,9 @@ class TelaStats extends StatefulWidget {
 }
 
 class _TelaStatsState extends State<TelaStats> {
+  final contador = Contador();
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -119,8 +124,8 @@ class _TelaStatsState extends State<TelaStats> {
                       children: [
                         Image.asset("bar2.png",
                           height: 100,),
-                        const Text("45",
-                          style: TextStyle(
+                        Text("${contador.show()}",
+                          style: const TextStyle(
                             color: Color.fromRGBO(243, 243, 243, 1),
                             fontSize: 30,
                             fontWeight: FontWeight.w600,
@@ -139,6 +144,7 @@ class _TelaStatsState extends State<TelaStats> {
               )
             ],
           )),
+          
     );
   }
 }
