@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:horrorland/screens/gallifrey.dart';
 import 'package:horrorland/screens/telainicial.dart';
-import 'package:horrorland/screens/telaplanetas.dart';
-import 'package:horrorland/screens/telastats.dart';
 
 void main() {
   runApp(const MyApp());

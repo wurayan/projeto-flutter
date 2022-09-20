@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:horrorland/screens/gallifrey.dart';
 
 class Planetas extends StatefulWidget {
@@ -19,7 +17,7 @@ class _PlanetasState extends State<Planetas> {
         width: MediaQuery.of(context).size.width,
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('bgplanetas.png'),
+                image: AssetImage('assets/bgplanetas.png'),
                 fit: BoxFit.cover,
                 alignment: Alignment.center)),
         child: Column(
@@ -61,7 +59,7 @@ class _PlanetasState extends State<Planetas> {
                     ),
                     SizedBox(
                       height: 200,
-                      child: Image.asset("gally.png"),
+                      child: Image.asset("assets/gally.png"),
                     )
                   ],
                 ),
@@ -99,7 +97,7 @@ class _PlanetasState extends State<Planetas> {
                     ),
                     SizedBox(
                       height: 200,
-                      child: Image.asset("cyber.png",
+                      child: Image.asset("assets/cyber.png",
                       fit: BoxFit.cover,),
                     )
                   ],
@@ -138,7 +136,7 @@ class _PlanetasState extends State<Planetas> {
                     ),
                     SizedBox(
                       height: 200,
-                      child: Image.asset("planeta.png"),
+                      child: Image.asset("assets/planeta.png"),
                     )
                   ],
                 ),
@@ -176,7 +174,7 @@ class _PlanetasState extends State<Planetas> {
                     ),
                     SizedBox(
                       height: 200,
-                      child: Image.asset("venus.png"),
+                      child: Image.asset("assets/venus.png"),
                     )
                   ],
                 ),

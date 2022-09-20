@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:horrorland/screens/telaplanetas.dart';
 import 'package:horrorland/util/contador.dart';
 
@@ -23,7 +21,7 @@ class _TelaStatsState extends State<TelaStats> {
           width: MediaQuery.of(context).size.width,
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("astronautaedit.png"),
+              image: AssetImage("assets/astronautaedit.png"),
               fit: BoxFit.cover,
             ),
           ),
@@ -74,7 +72,7 @@ class _TelaStatsState extends State<TelaStats> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          Image.asset("bar1.png",
+                          Image.asset("assets/bar1.png",
                             height: 100,),
                           const Text("8",
                             style: TextStyle(
@@ -98,7 +96,7 @@ class _TelaStatsState extends State<TelaStats> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Image.asset("bar3.png",
+                        Image.asset("assets/bar3.png",
                           height: 100,),
                         const Text("12",
                           style: TextStyle(
@@ -122,7 +120,7 @@ class _TelaStatsState extends State<TelaStats> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Image.asset("bar2.png",
+                        Image.asset("assets/bar2.png",
                           height: 100,),
                         Text("${contador.show()}",
                           style: const TextStyle(

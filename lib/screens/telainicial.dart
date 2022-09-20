@@ -1,8 +1,6 @@
-import 'dart:ui';
+
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:horrorland/screens/telastats.dart';
 
 class FirstPage extends StatefulWidget {
@@ -20,7 +18,7 @@ class _FirstPageState extends State<FirstPage> {
         width: MediaQuery.of(context).size.width,
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('telainicial.png'), fit: BoxFit.cover)),
+                image: AssetImage('assets/telainicial.png'), fit: BoxFit.cover)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,

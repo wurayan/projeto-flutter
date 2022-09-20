@@ -67,7 +67,7 @@ flutter:
   #   - images/a_dot_ham.jpeg
 
 flutter_native_splash:
-  image: splash.png
+  image: assets/splash.png
   color: "000000"
   android_disable_fullscreen: true
   fill: true
@@ -75,7 +75,7 @@ flutter_native_splash:
 flutter_icons:
   android: true
   ios: true
-  image_path: icon.png
+  image_path: assets/icon.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

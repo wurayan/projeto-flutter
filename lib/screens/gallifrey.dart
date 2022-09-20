@@ -27,23 +27,22 @@ class _GallifreyState extends State<Gallifrey> {
         width: MediaQuery.of(context).size.width,
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('bggalli.png'),
+                image: AssetImage('assets/bggalli.png'),
                 fit: BoxFit.cover,
                 alignment: Alignment.center)),
-        child: Expanded(
-          child: Card(
+        child:  Card(
               clipBehavior: Clip.antiAlias,
               color: const Color.fromARGB(216, 0, 0, 0),
               elevation: 10,
-              margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 100),
+              margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(25)),
               child: SizedBox(
                   height: 800,
                   width: MediaQuery.of(context).size.width,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 10, vertical: 20),
+                    padding: const EdgeInsets.only(
+                        left:10, right: 10, top: 20),
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -59,7 +58,7 @@ class _GallifreyState extends State<Gallifrey> {
                             height: 20,
                           ),
                           const SizedBox(
-                            height: 100,
+                            height: 150,
                             child: Flexible(
                               child: Text(
                             "Vista de sua órbita, Gallifrey tinha cor de ferrugem, com lagos marrons e nuvens cinzas. Depois da Última Grande Guerra do Tempo, ele ainda conservava sua cor de ferrugem e marrom, mas passou a ter uma aparência mais vulcânica.",
@@ -96,7 +95,7 @@ class _GallifreyState extends State<Gallifrey> {
                                     onPressed: () {},
                                     child: const CircleAvatar(
                                       backgroundImage:
-                                          AssetImage('mlbloom.png'),
+                                          AssetImage('assets/mlbloom.png'),
                                       radius: 30,
                                     ),
                                   ),
@@ -117,7 +116,7 @@ class _GallifreyState extends State<Gallifrey> {
                                   TextButton(
                                     onPressed: () {},
                                     child: const CircleAvatar(
-                                      backgroundImage: AssetImage('ferro.png'),
+                                      backgroundImage: AssetImage('assets/ferro.png'),
                                       radius: 30,
                                     ),
                                   ),
@@ -139,7 +138,7 @@ class _GallifreyState extends State<Gallifrey> {
                                     onPressed: () {},
                                     child: const CircleAvatar(
                                       backgroundImage:
-                                          AssetImage('silverwood.png'),
+                                          AssetImage('assets/silverwood.png'),
                                       radius: 30,
                                     ),
                                   ),
@@ -166,7 +165,7 @@ class _GallifreyState extends State<Gallifrey> {
                             ),
                           ),
                           const SizedBox(
-                            height: 30,
+                            height: 10,
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -235,10 +234,11 @@ class _GallifreyState extends State<Gallifrey> {
                               )
                             ],
                           ),
-                          const SizedBox(height: 30),
+                          const SizedBox(height: 15),
                           SizedBox(
                             height: 200,
-                            child: Image.asset('gallibg.png'),
+                            child: Image.asset('assets/gallibg.png',
+                            fit: BoxFit.cover,),
                           ),
                           TextButton(
                               onPressed: () {
@@ -253,7 +253,7 @@ class _GallifreyState extends State<Gallifrey> {
                               ))
                         ]),
                   ))),
-        ),
+        //exp
       ),
       )
     );
